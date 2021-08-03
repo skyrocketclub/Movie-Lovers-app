@@ -1,0 +1,4 @@
+-IC:\Users\ugo\Documents\Part_Two\Movie_Lovers_App
+-std=c++17
+-target
+
