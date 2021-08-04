@@ -40,5 +40,6 @@ int main() {
     Movies my_movies;
     my_movies.add_movie("snow white", "PG 13",1);
 //    my_movies.increment_count("snow white");
+    my_movies.display_list();
     return 0;
 }

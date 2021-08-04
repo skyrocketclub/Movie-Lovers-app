@@ -31,10 +31,13 @@ private:
        std::vector<Movie> movies{ };
        
 public:
+  
     void add_movie(std::string movie_title, std::string rating, int count);
     void increment_count(std::string movie_title);
     void display_list();
-    bool search(Movie obj,std::string movie_title);
+    
+  
+   
     Movies();
     ~Movies();
 
