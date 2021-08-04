@@ -93,6 +93,10 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="Movies.cpp"/>
+    <File Name="Movies.hpp"/>
+    <File Name="Movie.cpp"/>
+    <File Name="Movie.hpp"/>
     <File Name="main.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>

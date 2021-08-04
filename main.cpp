@@ -27,15 +27,18 @@
  *  public:
  *  add_movie( std::string movie_title, std::string rating, int watch_count);
  *  increment_count( std::string movie_title);
+
  *  display_list();
  *  
  * */
 
 
-
 #include <iostream>
+#include "Movies.hpp"
 
 int main() {
-    std::cout<<"My Template"<<std::endl;
+    Movies my_movies;
+    my_movies.add_movie("snow white", "PG 13",1);
+//    my_movies.increment_count("snow white");
     return 0;
 }
