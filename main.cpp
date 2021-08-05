@@ -39,7 +39,14 @@
 int main() {
     Movies my_movies;
     my_movies.add_movie("snow white", "PG 13",1);
-//    my_movies.increment_count("snow white");
     my_movies.display_list();
+    my_movies.add_movie("snow white", "PG 13",1);
+    my_movies.add_movie("Fast and furious 9", "18+",1);
+    my_movies.display_list();
+    my_movies.add_movie("Despicable me");
+    my_movies.display_list();
+    my_movies.increment_count("Despicable me");
+    my_movies.display_list();
+    my_movies.increment_count("boss baby");
     return 0;
 }

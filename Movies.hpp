@@ -31,8 +31,9 @@ private:
        std::vector<Movie> movies{ };
        
 public:
-  
+    bool watched(std::string);
     void add_movie(std::string movie_title, std::string rating, int count);
+    void add_movie(string title);
     void increment_count(std::string movie_title);
     void display_list();
     

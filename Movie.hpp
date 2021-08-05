@@ -20,7 +20,10 @@ public:
    string getname () const;
    string getrating () const;
    int getcount () const;
+   int increasecount();
+//   void increment ();
     Movie(string movie_title, string rating, int count);
+    Movie(string);
     ~Movie();
 
 };
