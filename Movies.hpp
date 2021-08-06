@@ -29,13 +29,16 @@ class Movies
 {
 private: 
        std::vector<Movie> movies{ };
+       char option {};
        
 public:
+    void display_menu();
     bool watched(std::string);
-    void add_movie(std::string movie_title, std::string rating, int count);
-    void add_movie(string title);
-    void increment_count(std::string movie_title);
+//    void add_movie(std::string movie_title, std::string rating, int count);
+    void add_movie();
+    void increment_count();
     void display_list();
+    void quit ();
     
   
    
