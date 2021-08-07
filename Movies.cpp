@@ -4,12 +4,7 @@
 #include <vector>
 #include <string>
 using namespace std;
-/*
- * THINGS TO INCREMENT
- * 
- * 1. make all input from the user capital to be in Upper case
- * 2. to add an option for including reviews to the movies...
- * */
+
 
 
 void Movies::display_menu(){
@@ -67,6 +62,7 @@ void Movies::add_movie (){
         cout<<"Movie title: ";
         cin.ignore(1, '\n');
         getline(cin, movie_title);
+        movie_title = capitalise(movie_title);
         bool status = watched(movie_title);
         
          if (status == true)
@@ -91,6 +87,7 @@ void Movies::increment_count(){
     cout<<"What movie count do you want to increment?: ";
     cin.ignore(1,'\n');
     getline(cin, title);
+    title = capitalise(title);
     bool isavailable {false};
     size_t p {0};
     size_t size = movies.size();
@@ -124,6 +121,15 @@ void Movies::increment_count(){
      option= '4';
  }
 
+string Movies::capitalise(string input){
+    string reform {};
+    for (auto letters : input){
+        letters = toupper(letters);
+        reform += letters;
+    }
+    input = reform;
+    return input;
+}
 //void Movies:: add_movie(string title)
 //{
 //    Movie movie(title);

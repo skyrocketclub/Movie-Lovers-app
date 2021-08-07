@@ -38,6 +38,7 @@ public:
     void add_movie();
     void increment_count();
     void display_list();
+    std::string capitalise (std::string input);
     void quit ();
     
   
